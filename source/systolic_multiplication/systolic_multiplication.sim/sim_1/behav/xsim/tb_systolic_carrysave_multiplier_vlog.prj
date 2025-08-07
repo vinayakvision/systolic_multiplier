@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../systolic_multiplication.srcs/sources_1/new/systolic_carrysave_multiplier.v" \
+"../../../../systolic_multiplication.srcs/sim_1/new/tb_systolic_carrysave_multiplier.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
